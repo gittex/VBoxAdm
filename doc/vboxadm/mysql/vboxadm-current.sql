@@ -26,7 +26,7 @@ CREATE TABLE `aliases` (
   `id` int(16) NOT NULL AUTO_INCREMENT,
   `domain_id` int(16) NOT NULL,
   `local_part` varchar(255) CHARACTER SET latin1 NOT NULL,
-  `goto` varchar(1020) CHARACTER SET latin1 NOT NULL,
+  `goto` varchar(2040) CHARACTER SET latin1 NOT NULL,
   `is_active` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `domain_id` (`domain_id`,`local_part`),
