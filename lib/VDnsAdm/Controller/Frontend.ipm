@@ -171,9 +171,10 @@ sub setup {
                     my $param   = shift;    # unused, always empty
                     my $plain   = shift;    # password from user
                     my $pwentry = shift;    # password hash from db
-                    my ( $pwscheme, undef, $salt ) = &VWebAdm::SaltedHash::split_pass($pwentry);
-                    my $passh = &VWebAdm::SaltedHash::make_pass( $plain, $pwscheme, $salt );
-                    return $passh;
+                    if ( &VWebAdm::SaltedHash::verify_pass($plain, $pwentry) ) {
+                        return $pwentry;
+                    }
+                    return;
                 },
             }
         ],
