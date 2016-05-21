@@ -1,6 +1,6 @@
 language: perl
 before_install:
-  - sudo apt-get install libdbi-perl libdbd-mysql-perl libconfig-std-perl fakeroot perltidy libtest-pod-perl spamassassin libnet-imap-client-perl libcgi-fast-perl libdigest-perl-md5-perl libnet-server-perl libcrypt-generatepassword-perl libcgi-application-perl libcgi-application-extra-plugin-bundle-perl libdata-password-perl libdata-page-perl libreadonly-perl libtemplate-perl libhtml-clean-perl libtext-csv-xs-perl libio-socket-inet6-perl
+  - sudo apt-get install libdbi-perl libdbd-mysql-perl libconfig-std-perl fakeroot perltidy libtest-pod-perl spamassassin libnet-imap-client-perl libcgi-fast-perl libdigest-md5-perl libnet-server-perl libcrypt-generatepassword-perl libcgi-application-perl libcgi-application-extra-plugin-bundle-perl libdata-password-perl libdata-page-perl libreadonly-perl libtemplate-perl libhtml-clean-perl libtext-csv-xs-perl libio-socket-inet6-perl
 perl:
   - "5.16"
   - "5.14"
